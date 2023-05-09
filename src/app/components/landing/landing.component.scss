@@ -4,6 +4,28 @@
     }
 }
 
-.vid-container {
-    margin: 2rem;
+.main-section-container {
+    display: flex;
+    justify-content: space-around;
+    .vid-container {
+        padding: 2rem;
+        max-height: 70vh;
+    }
+    .info-container {
+        display: flex;
+        align-items: center;
+
+        .info-img {
+            border-radius: 8px;
+            max-width: inherit;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .main-section-container {
+        .vid-container {
+            max-height: 85vh;
+        }
+    }
 }

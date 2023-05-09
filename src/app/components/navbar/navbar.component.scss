@@ -1,12 +1,27 @@
 .navbar {
-    background-color: #b7eed4;
+    background-color: #eaffdc;
     display: flex;
     justify-content: space-around;
 
-    .text-logo {
+    .brand-container {
+        display: flex;
         font-family: brownie;
-        margin-left: 2rem;
-        font-size: 2rem;
+        .text-logo {
+            color: #2a5924;
+            margin-left: 1rem;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-logo {
+            height: 50px;
+        }
+    }
+
+    .dropdown-toggle {
+        color: #2a5924;
+        font-family: sans-serif;
     }
 
     .dropdown-toggle:hover {
@@ -25,6 +40,7 @@
             &:hover {
                 color: #e5af61;
                 text-decoration: underline;
+                cursor: pointer;
             }
         }
     }

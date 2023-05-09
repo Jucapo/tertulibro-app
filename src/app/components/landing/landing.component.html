@@ -1,7 +1,16 @@
-<div class="vid-container">
-    <vg-player>
-        <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
-            <source src="/assets/vids/main.mp4" type="video/mp4" />
-        </video>
-    </vg-player>
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="row main-section-container">
+            <div class="vid-container col-md-6">
+                <vg-player>
+                    <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
+                        <source src="/assets/vids/main.mp4" type="video/mp4" />
+                    </video>
+                </vg-player>
+            </div>
+            <div class="info-container col-md-6 col-lg-5">
+                <img class="info-img" src="/assets/tertulia1.jpeg" alt="" />
+            </div>
+        </div>
+    </div>
 </div>
