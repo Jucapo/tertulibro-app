@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #b7eed4;
+    display: flex;
+    justify-content: space-around;
+
+    .text-logo {
+        font-family: brownie;
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+
+    .dropdown-toggle:hover {
+        color: #e5af61;
+        text-decoration: underline;
+    }
+
+    .sections-container {
+        color: #2a5924;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        justify-items: center;
+        span {
+            margin: 1rem;
+            &:hover {
+                color: #e5af61;
+                text-decoration: underline;
+            }
+        }
+    }
+}
