@@ -6,6 +6,24 @@
             max-height: 70vh;
         }
     }
+
+    ng-image-slider {
+        a {
+            color: #2a5924 !important;
+            text-decoration: none;
+        }
+        .caption {
+            border-radius: 1rem !important;
+        }
+
+        .img-div {
+            border-radius: 1rem !important;
+
+            img {
+                border-radius: 1rem !important;
+            }
+        }
+    }
 }
 
 .main-section-container {
@@ -22,9 +40,11 @@
         align-items: center;
 
         .info-img {
-            border-radius: 8px;
-            max-width: inherit;
-            max-height: 70vh;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
     }
 }

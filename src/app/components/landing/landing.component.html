@@ -9,7 +9,9 @@
                 </vg-player>
             </div>
             <div class="info-container col-md-6">
-                <img class="info-img" src="/assets/tertulia1.jpeg" alt="" />
+                <div class="info-img">
+                    <ng-image-slider [images]="imageObject" [imageSize]="{ width: '100%', height: 500 }"></ng-image-slider>
+                </div>
             </div>
         </div>
     </div>
