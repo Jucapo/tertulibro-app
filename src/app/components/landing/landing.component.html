@@ -1,18 +1,87 @@
-<div class="row justify-content-center mt-md-4">
-    <div class="col-lg-10">
-        <div class="row main-section-container">
-            <div class="vid-container col-md-6">
-                <vg-player>
-                    <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
-                        <source src="/assets/vids/main.mp4" type="video/mp4" />
-                    </video>
-                </vg-player>
-            </div>
-            <div class="info-container col-md-6">
-                <div class="info-img">
-                    <ng-image-slider [images]="imageObject" [imageSize]="{ width: '100%', height: 500 }"></ng-image-slider>
+<div class="landing row justify-content-center">
+    <div class="row main-section-container">
+        <section class="section-one col-lg-10 col-xl-8 py-md-4">
+            <div class="row">
+                <div class="vid-container col-md-6">
+                    <vg-player>
+                        <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
+                            <source src="/assets/vids/main.mp4" type="video/mp4" />
+                        </video>
+                    </vg-player>
+                </div>
+                <div id="tertulias" class="info-container col-md-6">
+                    <div class="info-img">
+                        <ng-image-slider [images]="imageObject" [imageSize]="{ width: '100%', height: 500 }"></ng-image-slider>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="description" class="section-two row justify-content-center p-0">
+            <svg class="p-0" width="100%" height="120" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+                <g transform="translate(-18.298844,-77.973964)">
+                    <path
+                        style="fill: #535e33"
+                        d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" />
+                    <path
+                        style="fill: #a3c49e"
+                        d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
+                </g>
+            </svg>
+            <div class="description-container col-10 col-lg-8 py-md-4">
+                <span class="title">¿Que es Tertulibro?</span>
+                <span class="sub-title"> "Descubre el poder de las palabras, nutre tu mente y alma en Tertulibro"</span>
+                <p align="justify">
+                    Tertulibro es una empresa dedicada a organizar tertulias enfocadas en la reflexión y el crecimiento espiritual
+                    y personal a través de la síntesis y compresión de diferentes libros. Nuestro principal objetivo es ofrecer un
+                    espacio acogedor donde los participantes puedan sumergirse en el mundo de la literatura y aprovechar las
+                    enseñanzas y conocimientos presentes en los libros, independientemente de si los han leído o no.
+                </p>
+                <p align="justify">
+                    En Tertulibro creemos en la importancia de la lectura como una herramienta para expandir la mente y enriquecer
+                    el espíritu. Nos enfocamos en temáticas que abarcan áreas clave para el desarrollo personal y el bienestar
+                    integral. Estos temas incluyen salud y estilos de vida, crecimiento personal, educación financiera,
+                    espiritualidad y energía.
+                </p>
+                <p align="justify">
+                    Durante nuestras tertulias, brindamos un espacio de diálogo abierto y respetuoso, donde se fomenta el
+                    intercambio de ideas y experiencias relacionadas con los libros seleccionados. Además, ofrecemos una merienda
+                    reconfortante y una taza de té para crear un ambiente cálido y propicio para la conversación y la reflexión.
+                </p>
+                <p align="justify">
+                    En Tertulibro nos esforzamos por hacer accesible la sabiduría contenida en los libros, de manera que cualquier
+                    persona pueda beneficiarse de ellas, independientemente de su nivel de lectura previa. Nuestro enfoque se
+                    centra en proporcionar herramientas prácticas y aplicables que impulsen el crecimiento personal, la salud, el
+                    bienestar financiero y la conexión espiritual.
+                </p>
+                <p align="justify">
+                    Únete a nuestras tertulias en Tertulibro y descubre cómo los libros pueden ser una fuente de inspiración y
+                    transformación en tu vida. ¡Te esperamos para compartir meriendas, tazas de té y experiencias enriquecedoras
+                    juntos!
+                </p>
+            </div>
+        </section>
+        <section id="focuses" class="section-three row justify-content-center p-0">
+            <svg
+                class="p-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="140"
+                viewBox="0.5 0.2 176 30"
+                preserveAspectRatio="none">
+                <g transform="translate(-13.668562,-111.38266)">
+                    <path
+                        style="fill: #ffe8c4"
+                        d="M 13.898015,111.51495 H 190.83044 v 26.19241 l -45.97036,-14.43255 -42.22858,7.48354 -45.970361,-14.96709 -31.003265,16.03617 z" />
+                </g>
+            </svg>
+            <div class="col-12 col-lg-8 py-md-4 row justify-content-center p-0">
+                <span class="title">ENFOQUES</span>
+                <img class="pt-0 col-12 col-md-10 col-lg-5" src="/assets/img/enfoques/enfoque01.jpeg" alt="enfoque1" />
+                <img class="pt-0 col-12 col-md-10 col-lg-5" src="/assets/img/enfoques/enfoque02.jpeg" alt="enfoque1" />
+                <img class="pt-0 col-12 col-md-10 col-lg-5" src="/assets/img/enfoques/enfoque03.jpeg" alt="enfoque1" />
+                <img class="pt-0 col-12 col-md-10 col-lg-5" src="/assets/img/enfoques/enfoque04.jpeg" alt="enfoque1" />
+            </div>
+        </section>
+        <section class="footer pt-4"></section>
     </div>
 </div>

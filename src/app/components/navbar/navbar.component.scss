@@ -35,6 +35,16 @@
         font-weight: 500;
         display: flex;
         justify-items: center;
+
+        a {
+            color: #2a5924;
+            text-decoration: none;
+            &:hover {
+                color: #e5af61;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
         span {
             margin: 1rem;
             &:hover {
@@ -43,5 +53,11 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .sections-container {
+        font-size: 14px !important;
     }
 }

@@ -26,6 +26,41 @@
     }
 }
 
+.title {
+    font-size: 2.5rem;
+    font-family: brownie;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: #2a5924;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    font-family: brownie;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: #7a9d76;
+    font-weight: 200;
+    text-align: center;
+}
+
+.landing {
+    background-color: rgb(251, 253, 253);
+    .section-two {
+        background-color: rgb(245, 245, 228);
+    }
+    .section-three {
+        background-color: rgb(255, 245, 244);
+    }
+
+    .footer {
+        background-color: rgb(255, 245, 244);
+    }
+}
+
 .main-section-container {
     display: flex;
     justify-content: space-around;
@@ -47,6 +82,13 @@
             padding: 0;
         }
     }
+
+    .description-container {
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -58,6 +100,12 @@
 
         .info-container {
             padding: 2rem;
+        }
+    }
+
+    .description-container {
+        .title {
+            font-size: 2rem !important;
         }
     }
 }

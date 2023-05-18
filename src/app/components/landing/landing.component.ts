@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
     selector: 'app-landing',
     templateUrl: './landing.component.html',
     styleUrls: ['./landing.component.scss'],
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent implements OnInit, OnChanges {
+    @Input() showSection: string = '';
+
     imageObject: Array<object> = [
         {
             image: 'assets/img/tertulias/tertulia01.jpeg',
@@ -23,6 +25,11 @@ export class LandingComponent implements OnInit {
     ];
 
     constructor() {}
+
+    ngOnChanges(changes: SimpleChanges) {
+        const section = document.getElementById(changes['showSection'].currentValue);
+        section?.scrollIntoView({ behavior: 'smooth' });
+    }
 
     ngOnInit(): void {}
 }
